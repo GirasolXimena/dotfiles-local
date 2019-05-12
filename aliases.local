@@ -1,0 +1,38 @@
+ function hs() {
+    (   cd ~/Coding/Projects/homestead && vagrant $* )
+}
+
+function emails() {
+for file in ${PWD}/*.mjml(.)
+     mjml $file:t --config.minify=true -o "${file:t:r}.html"; 
+}
+
+function gc() {
+  ( git add . && git commit -m $* )
+}
+
+alias nah='git reset --hard;git clean -df'
+alias art="php artisan"
+alias pa='php artisan'
+alias gs='git status'
+alias zshconfig="vim ~/.zshrc"
+alias zshsource="source ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias codebb='vim ~/Coding/Projects/BB-Citi_emails'
+alias codedac='vim ~/Coding/Projects/DAC'
+alias codenuvectra='vim ~/Coding/Projects/nuvectra'
+alias codedot='vim ~/dotfiles/'
+alias godot='cd ~/dotfiles/'
+alias gocode='cd ~/Coding/Projects/'
+alias gobb='cd ~/Coding/Projects/BB-Citi-emails'
+alias godac='cd ~/Coding/Projects/DAC'
+alias gonuvectra='cd ~/Coding/Projects/nuvectra'
+alias deploy-all-emails='gobb && npm run deploy-all'
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias .....="cd ../../../../"
+alias edithomestead='open -a "Visual Studio Code"
+~/Coding/Projects/homestead/homestead.yaml'
+alias homesteadedit='edithomestead'

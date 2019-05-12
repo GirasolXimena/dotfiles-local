@@ -1,0 +1,4 @@
+ZSH_THEME="agnoster"
+DEFAULT_USER=`whoami`
+export ZSH=$HOME/dotfiles-local/oh-my-zsh
+source $ZSH/oh-my-zsh.sh

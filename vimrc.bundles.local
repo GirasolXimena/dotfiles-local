@@ -1,0 +1,7 @@
+Plug 'Lokaltog/vim-powerline'
+Plug 'stephenmckinney/vim-solarized-powerline'
+Plug 'tpope/vim-unimpaired'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-pathogen'
+Plug 'tpope/vim-sensible'
+Plug 'qpkorr/vim-renamer'
