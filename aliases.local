@@ -2,13 +2,20 @@
     (   cd ~/Coding/Projects/homestead && vagrant $* )
 }
 
-function emails() {
-for file in ${PWD}/*.mjml(.)
-     mjml $file:t --config.minify=true -o "${file:t:r}.html"; 
+function gcall() {
+    ( git add . && git commit -m $* )
 }
 
-function gc() {
-  ( git add . && git commit -m $* )
+function emails() {
+  cd ~/Coding/Projects/BB-Citi-emails/emails/src/$*;
+  for file in ${PWD}/*.mjml(.)
+      mjml $file:t --config.minify=true -o "${file:t:r}.html"; 
+}
+
+function watchemails() {
+cd ~/Coding/Projects/BB-Citi-emails/emails/src/$*;
+for file in ${PWD}/*.mjml(.)
+  ttab -a iTerm2 mjml -w $file:t --config.minify=true -o "${file:t:r}.html";
 }
 
 alias nah='git reset --hard;git clean -df'
@@ -22,8 +29,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias codebb='vim ~/Coding/Projects/BB-Citi_emails'
 alias codedac='vim ~/Coding/Projects/DAC'
 alias codenuvectra='vim ~/Coding/Projects/nuvectra'
-alias codedot='vim ~/dotfiles/'
-alias godot='cd ~/dotfiles/'
+alias codedot='vim ~/dotfiles-local/'
+alias godot='cd ~/dotfiles-local/'
 alias gocode='cd ~/Coding/Projects/'
 alias gobb='cd ~/Coding/Projects/BB-Citi-emails'
 alias godac='cd ~/Coding/Projects/DAC'
