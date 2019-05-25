@@ -1,52 +1,104 @@
- function hs() {
-    (   cd ~/Coding/Projects/homestead && vagrant $* )
-}
-
- function hs() {
-    (   cd ~/Coding/Projects/homestead && vagrant $* )
-}
-function gcall() {
-    ( git add . && git commit -m $* )
-}
-# Best Buy Aliases
-function emails() {
-  cd ~/Coding/Projects/BB-Citi-emails/$*;
-  for file in ${PWD}/*.mjml(.)
-      mjml $file:t --config.minify=true -o "${file:t:r}.html"; 
-}
-
-function watchemails() {
-cd ~/Coding/Projects/BB-Citi-emails/$*;
-for file in ${PWD}/*.mjml(.)
-  ttab -a iTerm2 mjml -w $file:t --config.minify=true -o "${file:t:r}.html";
-}
-
-# DAC Aliases
-
-alias nah='git reset --hard;git clean -df'
-alias art="php artisan"
-alias pa='php artisan'
-alias gs='git status'
+#System Aliases
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias .....="cd ../../../../"
 alias aliasconfig="vim ~/dotfiles-local/aliases.local"
 alias zshconfig="vim ~/dotfiles-local/zshrc.local"
 alias zshsource="source ~/.zshrc"
 alias vimconfig="vim ~/dotfiles-local/vimrc.local"
 alias aliasconfig="vim ~/dotfiles-local/aliases.local"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias codebb='vim ~/Coding/Projects/BB-Citi-emails'
-alias codedac='vim ~/Coding/Projects/DAC'
-alias codenuvectra='vim ~/Coding/Projects/nuvectra'
 alias codedot='vim ~/dotfiles-local/'
 alias godot='cd ~/dotfiles-local/'
-alias gocode='cd ~/Coding/Projects/'
-alias gobb='cd ~/Coding/Projects/BB-Citi-emails'
-alias godac='cd ~/Coding/Projects/DAC'
-alias gonuvectra='cd ~/Coding/Projects/nuvectra'
-alias deploy-all-emails='gobb && php scripts/process.php && gcall'
-alias ..="cd ../"
-alias ...="cd ../../"
-alias ....="cd ../../../"
-alias .....="cd ../../../../"
-alias edithomestead='open -a "Visual Studio Code"
-~/Coding/Projects/homestead/homestead.yaml'
+alias gocode='cd ~/code/'
+
+function hs() {
+
+    (   cd ~/code/homestead && vagrant $* )
+}
+
+
+# Git Aliases
+function gca {
+    if [ -z "$1" ]; then
+        git commit --all
+    else
+        git commit --all --message "$*"
+    fi
+}
+alias g='git'
+alias gs='git status'
+
+alias ga='git add'
+alias gaa='git add --all'
+
+alias gc='git commit'
+alias gcm='git commit --message'
+alias gca='git commit --add'
+alias gcam='git commit --add --message'
+alias gce='git commit --amend'  # Edit commit message. 'gce' = 'git commit edit'
+
+alias gb='git branch'
+alias gba='git branch --all'
+
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gdt='git difftool'
+
+alias gmt='git mergetool'
+
+alias gch='git checkout'
+alias gchm='git checkout master'
+alias gchb='git checkout -b'
+
+alias gl='git log --decorate'
+alias glo='git log --decorate --graph --oneline'
+alias gloa='git log --decorate --graph --oneline --all'
+alias glao='gloa'
+alias gls='git log --decorate --graph --stat'
+alias gla='git log --decorate --graph --all'
+alias gld='git log --decorate --graph --patch'  # Show diff. 'gld' = 'git log diff'
+alias glda='git log --decorate --graph --patch --all'
+alias glad='glda'
+
+alias gp='git push'
+alias gpo='git push origin'
+alias gpom='git push origin master'
+
+alias gri='git rebase --interactive'
+alias grc='git rebase --continue'
+alias nah='git reset --hard;git clean -df'
+
+# DAC Aliases
+alias godac='cd ~/code/DAC'
+alias codedac='vim ~/code/DAC'
+
+#Artisan Aliases
+alias art="php artisan"
+alias pa='php artisan'
+alias gs='git status'
+
+#BB Aliases
+function emails() {
+  cd ~/code/BB-Citi-emails/$*;
+  for file in ${PWD}/*.mjml(.)
+      mjml $file:t --config.minify=true -o "${file:t:r}.html"; 
+}
+
+function watchemails() {
+cd ~/code/BB-Citi-emails/$*;
+for file in ${PWD}/*.mjml(.)
+  ttab -a iTerm2 mjml -w $file:t --config.minify=true -o "${file:t:r}.html";
+}
+alias gobb='cd ~/code/BB-Citi-emails'
+alias codebb='vim ~/code/BB-Citi-emails'
+alias deploy-all-emails='gobb && gcall'
+
+#Nuvectra Aliases
+alias codenuvectra='vim ~/code/nuvectra'
+alias gonuvectra='cd ~/code/nuvectra'
+
+#Homestead Aliases
+alias edithomestead='code ~/code/homestead/homestead.yaml'
 alias homesteadedit='edithomestead'
