@@ -5,15 +5,24 @@
 set relativenumber
 " set number
 
-" Let's save undo info!
-if !isdirectory($HOME."/.vim")
-    call mkdir($HOME."/.vim", "", 0770)
+if !isdirectory("$HOME/.vim/undodir")
+  call mkdir("$HOME/.vim/undodir", "p")
 endif
-if !isdirectory($HOME."/.vim/undo-dir")
-    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+
+if !isdirectory("$HOME/.vim/backup")
+  call mkdir("$HOME/.vim/backup", "p")
 endif
-set undodir=~/.vim/undo-dir
+
+if !isdirectory("$HOME/.vim/swap")
+  call mkdir("$HOME/.vim/swap", "p")
+endif
+
+set undodir="$HOME/.vim/undodir//"
+set backupdir="$HOME/.vim/backup//"
+set directory="$HOME/.vim/swap//"
 set undofile
+set swapfile
+set backup
 
 " fuzzy file find
 set path+=**
@@ -53,4 +62,6 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
+packloadall
+silent! helptags ALL
 " export PATH=".git/safe/../../bin:/Users/randrade/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/Library/bin:/Users/randrade/.composer/vendor/bin:function hs() {: ( cd ~/Document/Projects/homestead && vagrant $* ):}:/usr/local/share/dotnet:/usr/local/mysql/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/randrade/.vimpkg/bin"
