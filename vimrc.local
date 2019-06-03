@@ -64,4 +64,11 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 packloadall
 silent! helptags ALL
-" export PATH=".git/safe/../../bin:/Users/randrade/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/Library/bin:/Users/randrade/.composer/vendor/bin:function hs() {: ( cd ~/Document/Projects/homestead && vagrant $* ):}:/usr/local/share/dotnet:/usr/local/mysql/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/randrade/.vimpkg/bin"
+
+" COLORS
+"""" enable 24bit true color
+set termguicolors
+
+"""" enable the theme
+syntax enable
+colorscheme shades_of_purple

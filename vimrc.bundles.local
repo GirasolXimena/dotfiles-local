@@ -6,3 +6,5 @@ Plug 'tpope/vim-pathogen'
 Plug 'tpope/vim-sensible'
 Plug 'qpkorr/vim-renamer'
 Plug 'tpope/vim-fugitive'
+Plug 'Rigellute/shades-of-purple.vim'
+

@@ -1,4 +1,4 @@
-ZSH_THEME="agnoster"
+ZSH_THEME="shades-of-purple"
 DEFAULT_USER=`whoami`
 plugins=(git colorize osx tmux tmuxinator node npm nvm bundler gem rvm
 vi-mode zsh-syntax-highlighting)
