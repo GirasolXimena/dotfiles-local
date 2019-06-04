@@ -7,4 +7,5 @@ Plug 'tpope/vim-sensible'
 Plug 'qpkorr/vim-renamer'
 Plug 'tpope/vim-fugitive'
 Plug 'Rigellute/shades-of-purple.vim'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 

@@ -5,21 +5,27 @@
 set relativenumber
 " set number
 
-if !isdirectory("$HOME/.vim/undodir")
-  call mkdir("$HOME/.vim/undodir", "p")
+" Let's save undo info!
+
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
 endif
 
-if !isdirectory("$HOME/.vim/backup")
-  call mkdir("$HOME/.vim/backup", "p")
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
 endif
 
-if !isdirectory("$HOME/.vim/swap")
-  call mkdir("$HOME/.vim/swap", "p")
+if !isdirectory($HOME."/.vim/backup")
+  call mkdir($HOME."/.vim/backup", "p")
 endif
 
-set undodir="$HOME/.vim/undodir//"
-set backupdir="$HOME/.vim/backup//"
-set directory="$HOME/.vim/swap//"
+if !isdirectory($HOME."/.vim/swap")
+  call mkdir($HOME."/.vim/swap", "p")
+endif
+
+set undodir=$HOME/.vim/undo-dir//
+set backupdir=$HOME/.vim/backup//
+set directory=$HOME/.vim/swap//
 set undofile
 set swapfile
 set backup
@@ -72,3 +78,6 @@ set termguicolors
 """" enable the theme
 syntax enable
 colorscheme shades_of_purple
+
+" Fold Method
+set foldmethod=indent
