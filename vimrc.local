@@ -54,6 +54,10 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
+" Autoclose NERDTree if it's the only open window left.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") &&
+  \ b:NERDTree.isTabTree()) | q | endif
+
 call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
@@ -77,7 +81,7 @@ set termguicolors
 
 """" enable the theme
 syntax enable
-colorscheme shades_of_purple
+colorscheme spacecamp_lite
 
 " Fold Method
 set foldmethod=indent
