@@ -1,6 +1,3 @@
-" Always start nerdtree on startup
-" autocmd vimenter * NERDTree
-
 " Hybrid relative numbers
 set relativenumber
 " set number
@@ -8,11 +5,11 @@ set relativenumber
 " Let's save undo info!
 
 if !isdirectory($HOME."/.vim")
-    call mkdir($HOME."/.vim", "", 0770)
+  call mkdir($HOME."/.vim", "", 0770)
 endif
 
 if !isdirectory($HOME."/.vim/undo-dir")
-    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+  call mkdir($HOME."/.vim/undo-dir", "", 0700)
 endif
 
 if !isdirectory($HOME."/.vim/backup")
@@ -30,8 +27,17 @@ set undofile
 set swapfile
 set backup
 
+" Wildmenu
+set wildmenu
+
 " fuzzy file find
 set path+=**
+
+" Highlight Search
+set hlsearch
+
+" Move to first match
+set incsearch
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
@@ -44,6 +50,8 @@ nnoremap <C-S-Down> <C-w>J
 nnoremap <C-S-Up> <C-w>K
 nnoremap <C-S-Left> <C-w>H
 nnoremap <C-S-Right> <C-w>L
+nnoremap <C-b> :CtrlPBuffer<cr>
+nnoremap ; : 
 
 execute pathogen#infect()
 call pathogen#helptags()
@@ -81,7 +89,17 @@ set termguicolors
 
 """" enable the theme
 syntax enable
-colorscheme spacecamp_lite
+colorscheme challenger_deep
 
 " Fold Method
 set foldmethod=indent
+" CtrlP Mappings
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Use system register for copy/paste
+set clipboard=unnamed
+
+" YouCompleteMe Timeout
+let g:plug_timeout=300

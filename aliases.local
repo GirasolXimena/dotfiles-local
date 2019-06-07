@@ -102,3 +102,6 @@ alias gonuvectra='cd ~/code/nuvectra'
 #Homestead Aliases
 alias edithomestead='code ~/code/homestead/homestead.yaml'
 alias homesteadedit='edithomestead'
+
+#Mastering VIM
+alias learnvim='cd ~/code/Mastering-Vim'
