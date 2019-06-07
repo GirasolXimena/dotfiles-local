@@ -89,7 +89,7 @@ set termguicolors
 
 """" enable the theme
 syntax enable
-colorscheme challenger_deep
+colorscheme seoul256
 
 " Fold Method
 set foldmethod=indent
