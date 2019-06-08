@@ -1,0 +1,12 @@
+[submodule "custom/themes/Shades-of-Purple-iTerm2"]
+	path = oh-my-zsh/custom/themes/Shades-of-Purple-iTerm2
+	url = https://github.com/ahmadawais/Shades-of-Purple-iTerm2
+[submodule "custom/plugins/zsh-autosuggestions"]
+	path = oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "custom/plugins/zsh-syntax-highlighting"]
+	path = oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrusell/oh-my-zsh.git
