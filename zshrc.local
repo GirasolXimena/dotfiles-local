@@ -14,3 +14,10 @@ export PATH=".git/safe/../../bin:/Users/randrade/.bin:/usr/local/sbin:/usr/local
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="$HOME/.bin:$PATH"
+
+### Added by Zplugin's installer
+source '/Users/srandradejr/.zplugin/bin/zplugin.zsh'
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zdharma/fast-syntax-highlighting
