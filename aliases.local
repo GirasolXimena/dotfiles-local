@@ -3,12 +3,11 @@ alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
-alias zshconfig="vim ~/dotfiles-local/zshrc.local"
+alias zshrc="vim ~/dotfiles-local/zshrc.local"
 alias zshsource="source ~/.zshrc"
-alias vimconfig="vim ~/dotfiles-local/vimrc.local"
-alias aliasconfig="vim ~/dotfiles-local/aliases.local"
-alias plugconfig="vim ~/dotfiles-local/vimrc.bundles.local"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias vimrc="vim ~/dotfiles-local/vimrc.local"
+alias aliasrc="vim ~/dotfiles-local/aliases.local"
+alias plugrc="vim ~/dotfiles-local/vimrc.bundles.local"
 alias codedot='vim ~/dotfiles-local/'
 alias godot='cd ~/dotfiles-local/'
 alias gocode='cd ~/code/'
@@ -35,7 +34,6 @@ alias gaa='git add --all'
 
 alias gc='git commit'
 alias gcm='git commit --message'
-alias gca='git commit --add'
 alias gcam='git commit --add --message'
 alias gce='git commit --amend'  # Edit commit message. 'gce' = 'git commit edit'
 
