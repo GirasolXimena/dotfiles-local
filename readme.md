@@ -1,0 +1,2 @@
+- brew bundle dump to get newest version of dumpfile
+- brew bundle to download stuff
