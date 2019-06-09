@@ -113,3 +113,6 @@ set tags=tags;  " Look for a tags file recursively
 
 " Undotree shortcut
 nnoremap <leader>u :UndotreeToggle<cr>
+
+" No show for airline
+set noshowmode
