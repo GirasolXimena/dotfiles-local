@@ -1,4 +1,4 @@
-ZSH_THEME="shades-of-purple"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_CUSTOM=$HOME/dotfiles-local/zsh_custom
 DEFAULT_USER=`whoami`
 plugins=(git colorize osx tmux tmuxinator node npm nvm bundler gem rvm
