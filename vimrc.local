@@ -104,8 +104,12 @@ set clipboard=unnamed
 " YouCompleteMe 
 " Timeout
 let g:plug_timeout=300
+
 " Go to definition
 noremap <leader>] :YcmCompleter GoTo<cr>
 
 " cTags
 set tags=tags;  " Look for a tags file recursively
+
+" Undotree shortcut
+nnoremap <leader>u :UndotreeToggle<cr>
