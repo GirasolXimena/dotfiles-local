@@ -18,4 +18,4 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'alvan/vim-closetag'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/seoul256.vim'
-
+Plug 'sjl/gundo.vim'

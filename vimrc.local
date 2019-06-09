@@ -101,5 +101,11 @@ let g:ctrlp_cmd = 'CtrlP'
 " Use system register for copy/paste
 set clipboard=unnamed
 
-" YouCompleteMe Timeout
+" YouCompleteMe 
+" Timeout
 let g:plug_timeout=300
+" Go to definition
+noremap <leader>] :YcmCompleter GoTo<cr>
+
+" cTags
+set tags=tags;  " Look for a tags file recursively
