@@ -1,8 +1,8 @@
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_CUSTOM=$HOME/dotfiles-local/zsh_custom
 DEFAULT_USER=`whoami`
-plugins=(git colorize osx tmux tmuxinator node npm nvm bundler gem rvm
-vi-mode zsh-syntax-highlighting)
+plugins=(git colorize osx tmux tmuxinator node npm nvm bundler
+vi-mode zsh-syntax-highlighting colored-man-pages)
 export ZSH=$HOME/dotfiles-local/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 export VIRTUAL_ENV_DISABLE_PROMPT=
