@@ -9,4 +9,4 @@
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = https://github.com/robbyrusell/oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh.git
