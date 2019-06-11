@@ -1,3 +1,13 @@
 [user]
-        name = Robert Andrade
-        email = srandradejr@gmail.com
+  name = Robert Andrade
+  email = srandradejr@gmail.com
+
+[diff]
+  tool = vimdiff
+
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
+
+[mergetool]
+  prompt = false

@@ -103,3 +103,6 @@ alias homesteadedit='edithomestead'
 
 #Mastering VIM
 alias learnvim='cd ~/code/Mastering-Vim'
+
+# Laravel Tests
+alias phpunit='./vendor/bin/phpunit --bootstrap vendor/autoload.php'
