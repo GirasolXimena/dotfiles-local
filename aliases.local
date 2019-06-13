@@ -89,8 +89,8 @@ cd ~/code/BB-Citi-emails/$*;
 for file in ${PWD}/*.mjml(.)
   ttab -a iTerm2 mjml -w $file:t --config.minify=true -o "${file:t:r}.html";
 }
-alias gobb='cd ~/code/BB-Citi-emails'
-alias codebb='vim ~/code/BB-Citi-emails'
+alias gobb='cd ~/code/BB-Citi-Emails'
+alias codebb='vim ~/code/BB-Citi-Emails'
 alias deploy-all-emails='gobb && gcall'
 
 #Nuvectra Aliases
@@ -98,7 +98,7 @@ alias codenuvectra='vim ~/code/nuvectra'
 alias gonuvectra='cd ~/code/nuvectra'
 
 #Homestead Aliases
-alias edithomestead='code ~/code/homestead/homestead.yaml'
+alias edithomestead='vim ~/code/homestead/homestead.yaml'
 alias homesteadedit='edithomestead'
 
 #Mastering VIM
