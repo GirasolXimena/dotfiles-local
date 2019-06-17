@@ -28,8 +28,6 @@ brew "cli53"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Reimplementation of ctags(1)
-brew "ctags", link: false
 # Tool for downloading RTMP streaming media
 brew "rtmpdump"
 # Lightweight DNS forwarder and DHCP server
@@ -78,8 +76,6 @@ brew "nginx", restart_service: true
 brew "node"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
-# General-purpose scripting language
-brew "php", restart_service: true, link: false
 # Tool to automatically fix PHP coding standards issues
 brew "php-cs-fixer"
 # General-purpose scripting language
