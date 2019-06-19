@@ -92,6 +92,7 @@ set foldmethod=indent
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+nnoremap <leader><leader>p :CtrlP<cr>
 
 " Use system register for copy/paste
 set clipboard=unnamed
@@ -104,33 +105,36 @@ let g:plug_timeout=300
 noremap <leader>] :YcmCompleter GoTo<cr>
 
 " cTags
-set tags=tags;  " Look for a tags file recursively
+  set tags=tags;
 
 " Undotree shortcut
-nnoremap <leader>u :UndotreeToggle<cr>
+  nnoremap <leader>u :UndotreeToggle<cr>
 
 " No show for airline
-set noshowmode
+  set noshowmode
 
 " these Ctrl mappings work well when Caps Lock is mapped to Ctrl
-nmap <silent> t<C-n> :TestNearest<CR>
-nmap <silent> t<C-f> :TestFile<CR>
-nmap <silent> t<C-s> :TestSuite<CR>
-nmap <silent> t<C-l> :TestLast<CR>
-nmap <silent> t<C-g> :TestVisit<CR>
+  nmap <silent> t<C-n> :TestNearest<CR>
+  nmap <silent> t<C-f> :TestFile<CR>
+  nmap <silent> t<C-s> :TestSuite<CR>
+  nmap <silent> t<C-l> :TestLast<CR>
+  nmap <silent> t<C-g> :TestVisit<CR>
 
 " Syntastic noob settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_pylint_exe = 'pylint3'
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
+  let g:syntastic_check_on_open = 1
+  let g:syntastic_check_on_wq = 0
+  let g:syntastic_python_pylint_exe = 'pylint3'
 
 " ALE for php
   let g:ale_fixers = { 'php': [ 'php_cs_fixer', ], }
   let g:airline#extensions#ale#enabled = 1
 
   let g:airline#extensions#tabline#enabled = 1
+
+" Tagbar mappings
+  nmap <F8> :TagbarToggle<CR>

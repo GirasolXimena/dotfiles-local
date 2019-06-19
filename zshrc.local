@@ -14,3 +14,5 @@ source ~/.iterm2_shell_integration.zsh
 export PATH=".git/safe/../../bin:/Users/randrade/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/Library/bin:/Users/randrade/.composer/vendor/bin:function hs() {: ( cd ~/Document/Projects/homestead && vagrant $* ):}:/usr/local/share/dotnet:/usr/local/mysql/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/randrade/.vimpkg/bin"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export PATH="$HOME/.bin:$PATH"
+#fzf source
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

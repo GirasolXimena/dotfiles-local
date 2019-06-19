@@ -81,7 +81,7 @@ alias gs='git status'
 function emails() {
   cd ~/code/BB-Citi-emails/$*;
   for file in ${PWD}/*.mjml(.)
-      mjml $file:t --config.minify=true -o "${file:t:r}.html"; 
+      mjml $file:t --config.minify=true -o "${file:t:r}.html";
 }
 
 function watchemails() {

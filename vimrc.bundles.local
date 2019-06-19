@@ -16,7 +16,6 @@ Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-commentary'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'alvan/vim-closetag'
-"Plug 'itchyny/lightline.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
@@ -30,4 +29,17 @@ Plug 'janko/vim-test'
 UnPlug 'janko-m/vim-test'
 Plug 'vim-syntastic/syntastic'
 Plug 'EinfachToll/DidYouMean'
-Plug 'Eervandew/supertab'
+Plug 'ervandew/supertab'
+Plug 'ryanoasis/vim-devicons'
+" PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  " Both options are optional. You don't have to install fzf in ~/.fzf
+  " and you don't have to run the install script if you use fzf only in Vim.
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
