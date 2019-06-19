@@ -1,4 +1,4 @@
-/* # Taps */
+# Taps
   tap "caskroom/cask"
   tap "caskroom/versions"
   tap "heroku/brew"
@@ -9,7 +9,7 @@
   tap "homebrew/services"
   tap "thoughtbot/formulae"
   tap "universal-ctags/universal-ctags"
-/* # Formulae */
+# Formulae
   # Search tool like grep, but optimized for programmers
   brew "ack"
   # Client for Amazon Elastic Beanstalk web service
@@ -124,7 +124,7 @@
   brew "thoughtbot/formulae/rcm"
   # Maintained ctags implementation
   brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
-/* # casks */
+# casks
   cask "ampps"
   cask "cyberduck"
   cask "disk-inventory-x"
