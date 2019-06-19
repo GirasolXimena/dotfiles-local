@@ -143,3 +143,6 @@ noremap <leader>] :YcmCompleter GoTo<cr>
 
 " Tagbar mappings
   nmap <F8> :TagbarToggle<CR>
+
+" Fugitive mappings
+ nnoremap <leader><leader>s :Gstatus<cr>

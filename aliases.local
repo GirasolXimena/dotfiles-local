@@ -106,3 +106,8 @@ alias learnvim='cd ~/code/Mastering-Vim'
 
 # Laravel Tests
 alias phpunit='./vendor/bin/phpunit --bootstrap vendor/autoload.php'
+
+# Neovim Alias
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
