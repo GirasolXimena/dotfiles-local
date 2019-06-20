@@ -78,6 +78,8 @@ call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 packloadall
 silent! helptags ALL
@@ -88,7 +90,10 @@ set termguicolors
 
 """" enable the theme
 syntax enable
-colorscheme seoul256
+colorscheme challenger_deep
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
 
 " Fold Method
 set foldmethod=indent
@@ -140,6 +145,8 @@ noremap <leader>] :YcmCompleter GoTo<cr>
   let g:airline#extensions#ale#enabled = 1
 
   let g:airline#extensions#tabline#enabled = 1
+  let g:lightline = { 'colorscheme': 'challenger_deep'}
+
 
 " Tagbar mappings
   nmap <F8> :TagbarToggle<CR>

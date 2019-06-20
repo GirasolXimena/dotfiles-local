@@ -108,6 +108,6 @@ alias learnvim='cd ~/code/Mastering-Vim'
 alias phpunit='./vendor/bin/phpunit --bootstrap vendor/autoload.php'
 
 # Neovim Alias
-if type nvim > /dev/null 2>&1; then
-  alias vim='nvim'
-fi
+# if type nvim > /dev/null 2>&1; then
+#   alias vim='nvim'
+# fi
