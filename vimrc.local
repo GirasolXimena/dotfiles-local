@@ -139,6 +139,8 @@ noremap <leader>] :YcmCompleter GoTo<cr>
   let g:syntastic_check_on_open = 1
   let g:syntastic_check_on_wq = 0
   let g:syntastic_python_pylint_exe = 'pylint3'
+  let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+
 
 " ALE for php
   let g:ale_fixers = { 'php': [ 'php_cs_fixer', ], }
