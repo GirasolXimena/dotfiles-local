@@ -43,3 +43,6 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
+Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'morhetz/gruvbox'
+
