@@ -120,6 +120,19 @@ alias learnvim='cd ~/code/Mastering-Vim'
 alias phpunit='./vendor/bin/phpunit --bootstrap vendor/autoload.php'
 
 # Neovim Alias
-# if type nvim > /dev/null 2>&1; then
-#   alias vim='nvim'
-# fi
+ if type nvim > /dev/null 2>&1; then
+   alias vim='nvim'
+ fi
+
+#  # NGROK
+#   alias share () {
+#     if [[ -n "$1" ]]; then
+#         ngrok http ${@:2} -host-header="$1" 80;
+#     else
+#         echo "Error: missing required parameters.";
+#         echo "Usage: ";
+#         echo "  share domain";
+#         echo "Invocation with extra params passed directly to ngrok";
+#         echo "  share domain -region=eu -subdomain=test1234";
+#     fi
+#   }

@@ -52,8 +52,8 @@ set incsearch
   nnoremap <leader><leader>h <C-w>h
   nnoremap <leader><leader>l <C-w>l
 
-execute pathogen#infect()
-call pathogen#helptags()
+"execute pathogen#infect()
+"call pathogen#helptags()
 
  " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
