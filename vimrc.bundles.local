@@ -46,4 +46,5 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'morhetz/gruvbox'
 Plug 'RobertAndradeJr/vim-mjml'
 Plug 'mxw/vim-jsx'
-
+Plug 'wookiehangover/jshint.vim'
+Plug 'skywind3000/asyncrun.vim'
