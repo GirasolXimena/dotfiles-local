@@ -5,16 +5,12 @@ Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-sensible'
 Plug 'qpkorr/vim-renamer'
-Plug 'Rigellute/shades-of-purple.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jaredgorski/spacecamp'
 Plug 'tpope/vim-vinegar'
-Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-commentary'
-Plug 'AndrewRadev/tagalong.vim'
 Plug 'alvan/vim-closetag'
 Plug 'rstacruz/vim-closer'
 Plug 'junegunn/seoul256.vim'

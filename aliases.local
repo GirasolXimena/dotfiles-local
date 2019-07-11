@@ -125,9 +125,9 @@ alias phpunit='./vendor/bin/phpunit --bootstrap vendor/autoload.php'
  fi
 
 # MySQL
-alias mysqlstart='sudo /usr/local/mysql/support-files/mysql.server start'
-alias mysqlsqlstop='sudo /usr/local/mysql/support-files/mysql.server stop'
-alias mysqlrestart'sudo /usr/local/mysql/support-files/mysql.server restart'
+alias mysqlstart='mysql.server start'
+alias mysqlsqlstop='mysql.server stop'
+alias mysqlrestart'mysql.server restart'
 
  # NGROK
   function share () {
