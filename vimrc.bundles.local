@@ -1,8 +1,6 @@
 Plug 'Lokaltog/vim-powerline'
 Plug 'stephenmckinney/vim-solarized-powerline'
 Plug 'tpope/vim-unimpaired'
-"Plug 'tpope/vim-pathogen'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-sensible'
 Plug 'qpkorr/vim-renamer'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
@@ -13,7 +11,6 @@ Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-commentary'
 Plug 'alvan/vim-closetag'
 Plug 'rstacruz/vim-closer'
-Plug 'junegunn/seoul256.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
@@ -30,17 +27,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   " Both options are optional. You don't have to install fzf in ~/.fzf
   " and you don't have to run the install script if you use fzf only in Vim.
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
-Plug 'xuyuanp/nerdtree-git-plugin'
-Plug 'morhetz/gruvbox'
 Plug 'RobertAndradeJr/vim-mjml'
 Plug 'mxw/vim-jsx'
 Plug 'wookiehangover/jshint.vim'
-Plug 'skywind3000/asyncrun.vim'
+Plug 'vim-latex/vim-latex'
+
