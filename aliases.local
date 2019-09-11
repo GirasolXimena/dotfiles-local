@@ -6,17 +6,13 @@ alias .....="cd ../../../../"
 alias zshrc="vim ~/dotfiles-local/zshrc.local"
 alias zshsource="source ~/.zshrc"
 alias vimrc="vim ~/dotfiles-local/vimrc.local"
-alias aliasrc="vim ~/dotfiles-local/aliases.local"
 alias plugrc="vim ~/dotfiles-local/vimrc.bundles.local"
 alias codedot='vim ~/dotfiles-local/'
+alias codealias="vim ~/dotfiles-local/aliases.local"
 alias godot='cd ~/dotfiles-local/'
 alias gocode='cd ~/code/'
-
-function hs() {
-
-    (   cd ~/code/homestead && vagrant $* )
-}
-
+alias gowedding='cd ~/code/wedding-website'
+alias goalias='cd ~/dotfiles-local/aliases.local'
 
 # Git Aliases
 function gca {
@@ -68,56 +64,8 @@ alias gri='git rebase --interactive'
 alias grc='git rebase --continue'
 alias nah='git reset --hard;git clean -df'
 
-# DAC Aliases
-alias godac='cd ~/code/DAC'
-alias codedac='vim ~/code/DAC'
-
-#Artisan Aliases
-alias art="php artisan"
-alias pa='php artisan'
-alias gs='git status'
-
-#BB Aliases
-function emailsminify() {
-  cd ~/code/BB-Citi-emails/$*;
-  for file in ${PWD}/*.mjml(.)
-      mjml $file:t --config.minify=true -o "${file:t:r}.html";
-}
-
-function watchemailsminify() {
-  cd ~/code/BB-Citi-emails/$*;
-  for file in ${PWD}/*.mjml(.)
-    ttab -a iTerm2 mjml -w $file:t --config.minify=true -o "${file:t:r}.html";
-}
-function emails() {
-  cd ~/code/BB-Citi-emails/$*;
-  for file in ${PWD}/*.mjml(.)
-      mjml $file:t -o "${file:t:r}.html";
-}
-
-function watchemails() {
-  cd ~/code/BB-Citi-emails/$*;
-  for file in ${PWD}/*.mjml(.)
-    ttab -a iTerm2 mjml -w $file:t -o "${file:t:r}.html";
-}
-
-alias gobb='cd ~/code/BB-Citi-Emails'
-alias codebb='vim ~/code/BB-Citi-Emails'
-alias deploy-all-emails='gobb && gcall'
-
-#Nuvectra Aliases
-alias codenuvectra='vim ~/code/nuvectra'
-alias gonuvectra='cd ~/code/nuvectra'
-
-#Homestead Aliases
-alias edithomestead='vim ~/code/homestead/'
-alias homesteadedit='edithomestead'
-
 #Mastering VIM
 alias learnvim='cd ~/code/Mastering-Vim'
-
-# Laravel Tests
-alias phpunit='./vendor/bin/phpunit --bootstrap vendor/autoload.php'
 
 # Neovim Alias
  if type nvim > /dev/null 2>&1; then
@@ -141,3 +89,12 @@ alias mysqlrestart'mysql.server restart'
         echo "  share domain -region=eu -subdomain=test1234";
     fi
   }
+alias gonote='cd ~/.vim/bundle/vim-notes/misc/notes/user/'
+
+# Constellation Projects
+alias goomega='cd ~/code/belvedere'
+alias goma='cd ~/code/myaccount'
+alias gomab='cd ~/code/myaccount-backend'
+alias codeomega='vim ~/code/belvedere'
+alias codema='vim ~/code/myaccount'
+alias codemab='vim ~/code/myaccount-backend'

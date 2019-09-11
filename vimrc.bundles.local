@@ -31,4 +31,7 @@ Plug 'RobertAndradeJr/vim-mjml'
 Plug 'mxw/vim-jsx'
 Plug 'wookiehangover/jshint.vim'
 Plug 'vim-latex/vim-latex'
-
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
