@@ -1,6 +1,5 @@
 tap "bramstein/webfonttools"
-tap "caskroom/cask"
-tap "caskroom/versions"
+tap "homebrew/cask-versions"
 tap "dart-lang/dart"
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -81,8 +80,6 @@ brew "python@2"
 brew "mercurial"
 # Terminal-based visual file manager
 brew "midnight-commander"
-# High-performance, schema-free, document-oriented database
-brew "mongodb"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
@@ -150,53 +147,36 @@ brew "thoughtbot/formulae/rcm"
 # Maintained ctags implementation
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "anki"
-cask "battle-net"
 cask "calibre"
-cask "cyberduck"
 cask "discord"
 cask "disk-inventory-x"
 cask "docker"
-cask "epic-games"
 cask "firefox"
-cask "flux"
 cask "flycut"
 cask "folx"
 cask "font-fira-code"
 cask "font-firacode-nerd-font"
 cask "font-hack-nerd-font"
 cask "google-chrome"
-cask "itch"
 cask "iterm2"
-cask "karabiner-elements"
 cask "kindle"
 cask "lastpass"
-cask "lunar"
-cask "mactex"
 cask "ngrok"
-cask "nightowl"
-cask "noisy"
 cask "nordvpn"
-cask "omnigraffle"
-cask "origin"
 cask "plex-media-player"
 cask "pocket-casts"
 cask "postman"
 cask "slack"
-cask "steam"
 cask "tableplus"
 cask "the-unarchiver"
 cask "tor-browser"
-cask "twitch"
 cask "vlc"
 cask "vscodium"
 cask "xamarin-profiler"
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
 mas "KakaoTalk", id: 869223134
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Skedaddle", id: 444419698
 mas "Xcode", id: 497799835
