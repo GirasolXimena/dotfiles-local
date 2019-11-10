@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/zsh 
 
 # Clone dotfiles from thoughtbot
 DOTFILES="$HOME/dotfiles"
@@ -45,5 +45,7 @@ else
 fi
 
 # Finished installing message
-
-echo "Finished installing"
+cat $HOME/dotfiles-local/shrek.txt
+echo ""
+echo ""
+printf "\e[32mYour brain gets smart but your head gets dumb\e[m\n"
