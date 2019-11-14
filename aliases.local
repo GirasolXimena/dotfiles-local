@@ -15,7 +15,8 @@ alias gowedding='cd ~/code/wedding-website'
 alias goalias='cd ~/dotfiles-local/aliases.local'
 alias hs='history | grep'
 alias nis="npm install --save "
-
+alias sharedrive='open "smb://inscape-s5.inscape.inscapemail.com/Commons"'
+alias mysharedrive='sharedrive && cd /Volumes/Commons/Common/Robert'
 # RC Aliases
 alias aliasrc="vim ~/dotfiles-local/aliases.local"
 alias plugrc="vim ~/dotfiles-local/vimrc.bundles.local"

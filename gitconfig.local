@@ -1,13 +1,12 @@
 [user]
   name = Robert Andrade
-  email = srandradejr@gmail.com
-
+  email = sandrade@wiley.com
 [diff]
   tool = vimdiff
-
 [merge]
   tool = vimdiff
   conflictstyle = diff3
-
 [mergetool]
   prompt = false
+[alias]
+  lot = log --pretty=format:'%Cgreen %h |%Cblue %ai |%Cred %an |%Creset %s'
