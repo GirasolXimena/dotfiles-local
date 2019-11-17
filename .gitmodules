@@ -13,3 +13,6 @@
 [submodule "zsh_custom/themes/powerlevel10k"]
 	path = zsh_custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "FiraCodeiScript"]
+	path = FiraCodeiScript
+	url = https://github.com/kencrocken/FiraCodeiScript.git
