@@ -31,7 +31,9 @@ else
 fi
 
 
-# Check if brew is installed, if it is then run bundle install and if it is not then install it
+# Check if brew is installed, 
+# if it is then run bundle install
+# if it is not then install brew
 which -s brew
 if [[ $? != 0 ]] ; then
 	ruby -e `$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
