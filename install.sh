@@ -1,4 +1,7 @@
-#!/bin/zsh 
+#!/usr/bin/env bash
+#run this script to install automagically
+# wget -O - https://raw.githubusercontent.com/RobertAndradeJr/dotfiles-local/master/install.sh | bash
+
 
 # Clone dotfiles from thoughtbot
 DOTFILES="$HOME/dotfiles"
@@ -8,6 +11,25 @@ if [ -f "$DOTFILES" ]; then
 else
   echo "dotfiles already installed, skipping..."
 fi
+
+# Clone dotfiles from RobertAndradeJr
+DOTFILESLOCAL="$HOME/dotfiles-local"
+if [ -f "$DOTFILESLOCAL" ]; then
+  git clone https://github.com/RobertAndradeJR/dotfiles-local.git $HOME/dotfiles-local --recurse
+  echo "Installing local dotfiles"
+else
+  echo "Local dotfiles already installed, skipping..."
+fi
+
+# Install fonts
+FIRACODEISCRIPT="/Library/Fonts/Fira*.tff"
+if [ -f "$FIRACODEISCRIPT" ]; then
+  echo "Fira Code iScript already installed..."
+else
+  cp ./FiraCodeiScript/**.ttf /Library/Fonts
+  echo "Fire Code iScript installed"
+fi
+
 
 # Check if brew is installed, if it is then run bundle install and if it is not then install it
 which -s brew
