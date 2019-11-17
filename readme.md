@@ -13,16 +13,14 @@
 - Get your life in order
 - Find your soulmate
 
+##### WARNING: Dotfiles come with no warranty
+##### I am not liable if they do not do everything promised
+
 ## Run the following command to install automagically
 ## without cloning repo first
 `wget -O -
 https://raw.githubusercontent.com/RobertAndradeJr/dotfiles-local/master/install.sh
 | bash`
-
-
-
-##### WARNING: Dotfiles come with no warranty
-##### I am not liable if they do not do everything promised
 
 #### Commands to update software for your brew dumpfile
 - `brew bundle dump` to get newest version of dumpfile
