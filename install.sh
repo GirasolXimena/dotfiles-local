@@ -22,11 +22,11 @@ else
 fi
 
 # Install fonts
-FIRACODEISCRIPT="/Library/Fonts/Fira*.tff"
+FIRACODEISCRIPT="$HOME/Library/Fonts/Fira*.tff"
 if [ -f "$FIRACODEISCRIPT" ]; then
   echo "Fira Code iScript already installed..."
 else
-  cp ./FiraCodeiScript/**.ttf /Library/Fonts
+  cp ./FiraCodeiScript/**.ttf $HOME/Library/Fonts
   echo "Fire Code iScript installed"
 fi
 
