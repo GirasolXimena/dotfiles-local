@@ -1,3 +1,4 @@
+/*jshint esnext: true*/
 export const requirements = [
     "return HTTP 403 to unauthorized users",
     "accept UTF-8 input",
@@ -13,7 +14,7 @@ export const requirements = [
     "work with screen readers",
     "use HTML5 canvas where available",
     "blink"
-  ]
+  ];
 export const features = [
     "User",
     "Request",
@@ -24,7 +25,7 @@ export const features = [
     "Profile",
     "Application",
     "Security"
-  ]
+  ];
 export const patterns = [
     "Factory",
     "Observer",
@@ -35,4 +36,4 @@ export const patterns = [
     "Service",
     "Delegate",
     "Activity"
-  ]
+  ];
