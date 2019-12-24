@@ -31,14 +31,14 @@ else
 fi
 
 
-# Check if brew is installed, 
+# Check if brew is installed,
 # if it is then run bundle install
 # if it is not then install brew
 which -s brew
 if [[ $? != 0 ]] ; then
-	ruby -e `$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
+  ruby -e `$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
 else
-	brew update
+  brew update
 fi
 
 #Install apps from brew bundle
@@ -52,8 +52,8 @@ echo "Installing and running dotfiles config"
 
 NVIMFILE="$HOME/.config/nvim/init.vim"
 if [ ! -f "$NVIMFILE" ]; then
-	mkdir -p "$(dirname "$NVIMFILE")" && touch "$NVIMFILE"
-	echo "Making nvim init file"
+  mkdir -p "$(dirname "$NVIMFILE")" && touch "$NVIMFILE"
+  echo "Making nvim init file"
 fi
 echo "Installing and running vim packages for neovim"
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after
@@ -63,9 +63,9 @@ source ~/.vimrc" > $NVIMFILE
 # Zsh as login shell
 
 if [ "$(which zsh)" == "/usr/local/bin/zsh" ]; then
-	echo "Already have oh-my-zsh as login shell"
+  echo "Already have oh-my-zsh as login shell"
 else
-	chsh -s $(which zsh)
+  chsh -s $(which zsh)
 fi
 
 # Finished installing message
