@@ -16,7 +16,8 @@ alias gowedding='cd ~/code/wedding-website'
 alias goalias='cd ~/dotfiles-local/aliases.local'
 alias hs='history | grep'
 alias nis="npm install --save "
-alias sharedrive='open "smb://inscape-s5.inscape.inscapemail.com/Commons"'
+alias gocommons='open "smb://inscape-s5.inscape.inscapemail.com/Commons"'
+alias godepartmentshares='open "smb://inscape-s5.inscape.inscapemail.com/Department-Shares"'
 alias mysharedrive='sharedrive && cd /Volumes/Commons/Common/Robert'
 # RC Aliases
 alias aliasrc="vim ~/dotfiles-local/aliases.local"
@@ -102,11 +103,4 @@ function share () {
 }
 
 alias gonote='cd ~/.vim/bundle/vim-notes/misc/notes/user/'
-
-# Constellation Projects
-alias goomega='cd ~/code/belvedere'
-alias goma='cd ~/code/myaccount'
-alias gomab='cd ~/code/myaccount-backend'
-alias codeomega='vim ~/code/belvedere'
-alias codema='vim ~/code/myaccount'
-alias codemab='vim ~/code/myaccount-backend'
+alias dowork='godot && node ./dowork.js'
