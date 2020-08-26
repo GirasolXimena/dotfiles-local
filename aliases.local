@@ -84,6 +84,9 @@ alias learnvim='cd ~/code/Mastering-Vim'
    alias vim='nvim'
  fi
 
+# EMACS
+alias ee='emacsclient -nw'
+
 # MySQL
 alias mysqlstart='mysql.server start'
 alias mysqlsqlstop='mysql.server stop'
