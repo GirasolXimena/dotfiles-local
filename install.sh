@@ -50,15 +50,15 @@ echo "Installing and running dotfiles config"
 
 # Change from vim to neovim
 
-NVIMFILE="$HOME/.config/nvim/init.vim"
-if [ ! -f "$NVIMFILE" ]; then
-  mkdir -p "$(dirname "$NVIMFILE")" && touch "$NVIMFILE"
-  echo "Making nvim init file"
-fi
-echo "Installing and running vim packages for neovim"
-echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
-source ~/.vimrc" > $NVIMFILE
+# NVIMFILE="$HOME/.config/nvim/init.vim"
+# if [ ! -f "$NVIMFILE" ]; then
+#   mkdir -p "$(dirname "$NVIMFILE")" && touch "$NVIMFILE"
+#   echo "Making nvim init file"
+# fi
+# echo "Installing and running vim packages for neovim"
+# echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after
+# let &packpath = &runtimepath
+# source ~/.vimrc" > $NVIMFILE
 
 # Zsh as login shell
 
