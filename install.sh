@@ -42,7 +42,7 @@ else
 fi
 
 #Install apps from brew bundle
-brew bundle install
+# brew bundle install
 
 # Install dotfiles and run rcup
 env RCRC=$HOME/dotfiles/rcrc rcup
