@@ -1,0 +1,21 @@
+{
+  "name": "dotfiles-local",
+  "version": "1.0.0",
+  "description": "This repo will do the following - Install Local Dotfiles from RobertAndrade Jr - Install Dotfiles Repo from THoughtbot - Install tooling used to install dotfiles - Install brew - Install Fonts - Install brew   - Install all needed software and CLI tooling from brew - Give you a warm fuzzy feeling inside - Do your Laundry - Get your life in order - Find your soulmate",
+  "main": "dowork.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertAndradeJr/dotfiles-local.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertAndradeJr/dotfiles-local/issues"
+  },
+  "homepage": "https://github.com/RobertAndradeJr/dotfiles-local#readme"
+}
