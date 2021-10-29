@@ -9,7 +9,7 @@
 		// Use hirsute or bionic on local arm64/Apple Silicon.
 		"args": { "VARIANT": "focal" }
 	},
-
+	"postCreateCommand": "git submodule update --init --recursive",
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
 
