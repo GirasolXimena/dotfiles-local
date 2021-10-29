@@ -34,7 +34,12 @@ fi
 # Check if brew is installed,
 # if it is then run bundle install
 # if it is not then install brew
+if [ "$(uname)" == "Darwin" ]; then
 which -s brew
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+which brew
+fi
+
 if [[ $? != 0 ]] ; then
   ruby -e `$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
 else
