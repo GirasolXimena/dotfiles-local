@@ -2,50 +2,6 @@
 #run this script to install automagically
 # wget -O - https://raw.githubusercontent.com/RobertAndradeJr/dotfiles-local/master/install.sh | bash
 
-
-# Clone dotfiles from thoughtbot
-DOTFILES="$HOME/dotfiles"
-if [ -f "$DOTFILES" ]; then
-  git clone https://github.com/thoughtbot/dotfiles.git $HOME/dotfiles
-  echo "Installing thoughtbot dotfiles"
-else
-  echo "dotfiles already installed, skipping..."
-fi
-
-# Clone dotfiles from RobertAndradeJr
-DOTFILESLOCAL="$HOME/dotfiles-local"
-if [ -f "$DOTFILESLOCAL" ]; then
-  git clone https://github.com/RobertAndradeJR/dotfiles-local.git $HOME/dotfiles-local --recurse
-  echo "Installing local dotfiles"
-else
-  echo "Local dotfiles already installed, skipping..."
-fi
-
-# Install fonts
-FIRACODEISCRIPT="$HOME/Library/Fonts/Fira*.tff"
-if [ -f "$FIRACODEISCRIPT" ]; then
-  echo "Fira Code iScript already installed..."
-else
-  cp ./FiraCodeiScript/**.ttf $HOME/Library/Fonts
-  echo "Fire Code iScript installed"
-fi
-
-
-# Check if brew is installed,
-# if it is then run bundle install
-# if it is not then install brew
-if [ "$(uname)" == "Darwin" ]; then
-which -s brew
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-which brew
-fi
-
-if [[ $? != 0 ]] ; then
-  ruby -e `$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
-else
-  brew update
-fi
-
 #Install apps from brew bundle
 # brew bundle install
 
@@ -74,7 +30,7 @@ else
 fi
 
 # Finished installing message
-cat $HOME/dotfiles-local/shrek.txt
+
 echo ""
 echo ""
 printf "\e[32mYour brain gets smart but your head gets dumb\e[m\n"
